@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Common Lib</string>
+
+    <!--通用-->
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+
+    <!--权限申请-->
+    <string name="permission_title">权限申请</string>
+    <string name="goto_setting">去设置</string>
+
+    <string name="camera_denied_message">相机</string>
+    <string name="write_external_storage_denied_message">存储</string>
+    <string name="access_fine_location_denied_message">定位</string>
+    <string name="read_phone_state_denied_message">读取手机状态</string>
+    <string name="call_phone_denied_message">拨打电话</string>
+    <string name="permission_message">在设置-应用-必应图库-权限中开启%s权限,以便正常使用</string>
+
+    <string name="skip_time">跳过&#160;%1$ds</string>
+
+</resources>

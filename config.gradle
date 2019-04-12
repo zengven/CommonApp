@@ -7,6 +7,8 @@ def versions = [
         glide            : '4.9.0',
         gson             : '2.8.5',
         okhttp           : '3.14.0',
+        arouter_api      : "1.4.1",
+        arouter_compiler : "1.2.2",
 ]
 
 def deps = [:]
@@ -32,6 +34,13 @@ def okhttp3 = [
         mockwebserver       : "com.squareup.okhttp3:mockwebserver:$versions.okhttp",
 ]
 deps.okhttp3 = okhttp3
+
+//Arouter
+def arouter = [
+        arouter_api     : "com.alibaba:arouter-api:$versions.arouter_api",
+        arouter_compiler: "com.alibaba:arouter-compiler:$versions.arouter_compiler",
+]
+deps.arouter = arouter
 
 //view
 deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"

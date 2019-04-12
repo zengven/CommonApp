@@ -18,7 +18,7 @@ public abstract class BaseListAdapter<T> extends BaseAdapter {
     public BaseListAdapter() {
     }
 
-    public void setList(List<T> list) {
+    public void setData(List<T> list) {
         synchronized (mLock) {
             if (list == null || list.isEmpty())
                 return;
@@ -27,12 +27,12 @@ public abstract class BaseListAdapter<T> extends BaseAdapter {
         notifyDataSetChanged();
     }
 
-    public void addList(List<T> list) {
+    public void addData(List<T> list) {
         synchronized (mLock) {
             if (list == null || list.isEmpty())
                 return;
             if (mList == null) {
-                setList(list);
+                setData(list);
                 return;
             }
             mList.addAll(list);

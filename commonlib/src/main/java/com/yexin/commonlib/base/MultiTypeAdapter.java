@@ -16,7 +16,7 @@ import java.util.List;
 public abstract class MultiTypeAdapter<T> extends RecyclerView.Adapter<BaseViewHolder> {
     protected List<T> mList;
 
-    public void setList(List<T> list) {
+    public void setData(List<T> list) {
         if (list == null) {
             return;
         }
@@ -24,19 +24,19 @@ public abstract class MultiTypeAdapter<T> extends RecyclerView.Adapter<BaseViewH
         notifyDataSetChanged();
     }
 
-    public void addList(List<T> list) {
+    public void addData(List<T> list) {
         if (list == null || list.isEmpty()) {
             return;
         }
         if (mList == null) {
-            setList(list);
+            setData(list);
             return;
         }
         mList.addAll(list);
         notifyDataSetChanged();
     }
 
-    public void clearList() {
+    public void clear() {
         if (mList != null) {
             mList.clear();
             notifyDataSetChanged();

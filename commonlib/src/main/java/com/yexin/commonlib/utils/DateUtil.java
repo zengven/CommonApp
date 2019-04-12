@@ -22,7 +22,7 @@ public class DateUtil {
     public static final String YEAR_DATE = "yyyy";
     public static final String TIME_PATTERN_NO_SECONDS = "yyyy-MM-dd HH:mm";
 
-    private static ThreadLocal<SimpleDateFormat> sThreadLocal = new ThreadLocal<>(); //解决高并发格式化时间大量创建SimpleDateFormat实例
+    private static ThreadLocal<SimpleDateFormat> sThreadLocal = new ThreadLocal<>();
 
     private static SimpleDateFormat getSimpleDateFormat() {
         SimpleDateFormat sdf = null;
